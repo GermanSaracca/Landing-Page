@@ -1,0 +1,498 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:white;
+    width: 100%;
+    height: auto;
+}
+main {
+    width: auto;
+}
+h1 {
+    font-family: IBM plex sans;
+    color: rgba(6,10,36,1);
+    margin-left: 16px;
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 0;
+}
+h2 {
+    font-family: IBM plex sans;
+    color: rgba(6,10,36,1);
+    margin-left: 16px;
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 0;    
+}
+.tituflex h2 {
+    width: 288px;
+}
+p {
+    font-family: IBM plex mono;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding-top: 73px;
+}
+.tachado {
+    text-decoration: line-through;
+}
+.punto {
+    color: #0000EC;
+}
+.textwo {
+    display: none;
+}
+.button {
+    margin-top: 36px;
+}
+.conoce {
+    text-decoration: none;
+    background-color: #00F3BB;
+    font-family: IBM plex mono;
+    font-size: 16px;
+    font-weight: 500;
+    color: #060A24;
+    padding-right: 96px;
+    padding-left: 96px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.conoce:hover {
+    background: linear-gradient(225deg,#0000FE,#00F0B8);
+    color: white;
+}
+/*EPISODIOS*/
+.episodios { 
+    background: linear-gradient(225deg,#0000FF,#0000A3 );
+    height: auto;
+    width: auto;
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100% );
+            clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100% );
+    margin-top: 24px;
+}
+.contenido_episodios {
+    padding-top: 64px;
+}
+.episodios .contenido_episodios h2 {
+    color: white;
+}
+iframe {
+    margin-bottom: 11px;
+    width: 100%;
+}
+.podcasts {
+    margin-top: 21px;
+    margin-left: 11px;
+    margin-right: 11px;
+    padding-bottom: 143.5px;
+}
+.pods {
+    display: flex;
+    flex-direction: column;
+}
+
+/*DE DONDE VENIMOS*/
+.nosotros {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -150.5px;
+    padding-top: 44px;
+}
+.entrevistas .tituflex {
+    margin-bottom: 14px;
+}
+.phone {
+    width: 320px;
+    height: 519px;
+    margin-bottom: 27px;
+    align-self: center;
+}
+.textonosotros  p {
+    margin-top: 8px;
+}
+
+/*ENTREVISTAS*/
+.entrevistas {
+    width: 100%;
+    padding-top: 54px;
+}
+.fotosinvitadas {
+    display: grid;
+}
+
+.inv {
+    display: flex;
+    align-items: stretch;
+}
+.inv img {
+    width: 100%;
+}
+
+/*TOPICOS*/
+.topicos {
+    padding-top: 48px;
+}
+.iconostopic {
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 36px;
+}
+h3 {
+    font-family: IBM Plex Sans;
+    font-weight: 600;
+    font-size: 24px;
+    color: #060A24;
+    text-align: center;
+    width: 288px;
+}
+.icon img {
+    margin-bottom: 13px;
+}
+
+/*NOVEDADES*/
+.novedades {
+    background: linear-gradient(225deg,#0000FF,#0000A3 );
+    height: 341px;
+    width: auto;
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.novedades .tituflex h2 {
+    text-align: center;
+    color: white;
+    padding-top: 64px;
+    line-height: 42px;
+    margin: 0;
+}
+.novedades .conoce {
+    padding-right: 43px;
+    padding-left: 43px;    
+}
+.novedades .conoce:hover {
+    border: solid white 2px;
+}
+
+/*FOOTER*/
+.flexfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 31px;
+}
+.iconsfooter {
+    display: flex;
+    justify-content: space-between;
+    width: 227px;
+}
+.flexfooter p {
+    margin: 16px;
+}
+
+.flexfooter .iconsfooter a {
+    color: #060A24;
+}
+.flexfooter .iconsfooter .a:hover {
+    transform: scale(3, 3);
+    transition: ease-in 0.3s;
+}
+/*aclarar para que dispositivo sirve el media*/
+@media screen and (min-width: 480px){
+    /* CAMBIO ENTREVISTAS*/
+    .fotosinvitadas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px){
+    /*CAMBIO DE ORIENTACION DE PODCASTS*/
+    .pods {
+        display: grid;
+            
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 232px 232px;
+        grid-gap: 36px;
+    }
+    .podcasts {
+        padding-top: 16px;
+        margin-left: 36px;
+        margin-right: 36px;
+        padding-bottom: 150px;
+    }
+    .contenido_episodios {
+        padding-top: 94px;
+    }
+    .episodios .contenido_episodios h2 {
+        margin-left: 36px;
+        font-size: 48px;
+    }
+    .nosotros {
+        padding-top: 78px;
+    }
+    .entrevistas {
+        padding-top: 68px;
+    }
+    .topicos {
+        padding-top: 68px;
+    }
+    h1,h2 {
+        margin-left: 36px;
+    }
+    p {
+        margin-left: 36px;
+    }
+    .conoce {
+        margin-left: 36px;
+    }
+    .topicos .tituflex h1 {
+        margin:0 auto;
+        text-align: center;
+    }
+
+    .titulo {
+        padding-top: 100px;
+    }
+    
+}
+
+/*!!!!!!!!!!!!!!   1024     !!!!!!!!!!!!!!*/
+@media screen and (min-width: 1024px){
+    body {
+        width: 100%;
+    }
+
+    /*CAMBIOS EN HEADER*/
+    .logo {
+        height: 36px;
+        width: 36px;
+    }
+    li {
+        font-size: 16px;
+    }
+
+    /*CAMBIO DE TEXTO DE EPIGRAFE*/
+    .textone {
+       display:none;
+    }
+    .textwo {
+        display: initial;
+    }
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        padding-top: 200px;
+        }
+    .titulo, .epigrafe, .conoce {
+        margin-left: 14%;
+    }
+    h1 {
+        font-family: IBM plex sans;
+        color: rgba(6,10,36,1);
+        margin-left: 0px;
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: lighter;
+        letter-spacing: 0;
+    }
+    .tituloinline {
+        margin-left: 0;
+        padding-left: 16px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 628px;
+        margin:0;
+    }
+
+    .button {
+        margin-top: 56px;
+    }
+    .conoce {
+        text-decoration: none;
+        background-color: #00F3BB;
+        font-family: IBM plex mono;
+        font-size: 18px;
+        font-weight: 500;
+        color: #060A24;
+        padding-right: 59px;
+        padding-left: 59px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-right: 16px;
+    }
+
+    /*CAMBIO DE ORIENTACION DE PODCASTS*/
+    .episodios .contenido_episodios h2 {
+        font-size: 48px;
+        line-height: 0;
+        margin-left: 200px;
+    }
+    .pods {
+        display: grid;
+            
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 232px 232px;
+        grid-gap: 72px;
+    }
+    .podcasts {
+        padding-top: 26px;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-bottom: 232.6px;
+    }
+    .episodios {
+        margin-top: 5px;
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+                clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+        height: auto;
+    }
+    .contenido_episodios {
+        padding-top: 186px;
+    }
+
+  
+    /*DE DONDE VENIMOS + CELULAR*/
+    .nosotros {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding-left: 200px;
+        padding-right: 256px;
+        margin-top: -248.6px;
+        padding-top: 84px;
+    }
+    .phone {
+        width: 457.6px;
+        height: 660px;
+        margin-right: 62.4px;
+        margin-bottom: 0px;
+    }
+    .entrevistas .tituflex {
+        margin-bottom: 36px;
+    }
+    .textonosotros  p {
+        width: 464px ;
+        margin-left: 0px;
+    }
+    .tituflex h2 {
+        margin-left: 0px;
+        font-size: 48px;
+        width: auto;
+    }
+
+    /*ENTREVISTAS*/
+    .entrevistas {
+        padding-top: 64px;
+    }
+    .fotosinvitadas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .entrevistas .tituflex {
+        margin-left: 200px;
+        margin-bottom: 36px;
+    }
+
+    /*TOPICOS*/
+    .topicos {
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 34px;
+        padding-top: 64px;
+    }
+    .iconostopic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .icon img {
+        margin-bottom: 13px;
+    }
+    h3 {
+        width: 220px;
+    }
+
+    /*NOVEDADES*/
+    .novedades {
+        background: linear-gradient(225deg,#0000FF,#0000A3 );
+        height: 518px;
+        width: auto;
+        -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .novedades .tituflex h2 {
+        text-align: center;
+        color: white;
+        padding-top: 213px;
+        line-height: 42px;
+    }
+    .novedades .conoce {
+        padding-right: 59px;
+        padding-left: 59px;
+        margin-left: 0;  
+        margin-right: 0;  
+    }
+
+    /*FOOTER*/
+    .flexfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 36px;
+        margin-bottom: 31px;
+    }
+    .flexfooter p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .iconsfooter {
+        display: flex;
+        justify-content: space-between;
+        width: 227px;
+    }
+
+}
+
